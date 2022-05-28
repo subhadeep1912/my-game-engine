@@ -1,30 +1,71 @@
 #include "Graphics.hpp"
-#include <cstdlib>
-#include "makeShaders.h"
+#include "Shaders.h"
+#include "Window.h"
+#include <cmath>
+#include "glm/vec2.hpp"
+#include "MainGUI.h"
 
-float vertices[] = {
-    -0.5f, -0.5f, 0.0f,
+
+
+const char* vertexShaderSource = "src/Graphics/shaders/temp_1.glsl";
+const char* fragShaderSource = "src/Graphics/shaders/temp_1_frag.glsl";
+const char* fragShaderSource1 = "src/Graphics/shaders/temp_2.glsl";
+const char* fragShaderSource2 = "src/Graphics/shaders/try_1.glsl";
+
+float vertices1[] = {
+    -0.5f, 0.5f,0.0f,
     0.5f, -0.5f, 0.0f,
-    0.0f, 0.5f, 0.0f
+    -0.5f, -0.5f, 0.0f,
+
+    -0.5f, 0.5f, 0.0f,
+    0.5f, 0.5f, 0.0f,
+    0.5f, -0.5f, 0.0f,
+
+    -0.5f, 0.5f,1.0f,
+    0.5f, -0.5f, 1.0f,
+    -0.5f, -0.5f, 1.0f,
+
+    -0.5f, 0.5f, 1.0f,
+    0.5f, 0.5f, 1.0f,
+    0.5f, -0.5f, 1.0f,
+
+    0.5f, 0.5f, 0.0f,
+    0.5f, -0.5f, 0.0f,
+    0.5f, -0.5f, 1.0f,
+
+    0.5f, 0.5f, 1.0f,
+    0.5f, -0.5f, 1.0f,
+    0.5f, 0.5f, 0.0f,
+
+    -0.5f, 0.5f, 0.0f,
+    -0.5f, -0.5f, 0.0f,
+    -0.5f, -0.5f, 1.0f,
+
+    -0.5f, 0.5f, 1.0f,
+    -0.5f, -0.5f, 1.0f,
+    -0.5f, 0.5f, 0.0f,
+
+    -0.5f, 0.5f, 0.0f,
+    0.5f, 0.5f, 0.0f,
+    -0.5f, 0.5f, 1.0f,
+
+    -0.5f, 0.5f, 1.0f,
+    0.5f, 0.5f, 1.0f,
+    0.5f, 0.5f, 0.0f,
+
+    -0.5f,-0.5f, 0.0f,
+    0.5f,-0.5f, 0.0f,
+    -0.5f, -0.5f, 1.0f,
+
+    -0.5f, -0.5f, 1.0f,
+    0.5f, -0.5f, 1.0f,
+    0.5f, -0.5f, 0.0f,
 };
 
-// const char *vertexShaderSource = "#version 330 core\n"
-// "layout (location=0) in vec3 aPos;\n"
-// "void main()\n"
-// "{\n"
-// "   gl_Position = vec4(aPos.x, aPos.y, aPos.z, 1.0);\n"
-// "}\0";
-
-// const char *fragmentShaderSource = "#version 330 core\n"
-// "out vec4 FragColor;\n"
-// "void main()\n"
-// "{\n"
-// "   FragColor = vec4(1.0f, 0.5f, 0.2f, 1.0f);\n"
-// "}\0";
 
 void framebuff_size_callback(GLFWwindow* window, int width, int height)
 {
-    glViewport(0, 0, width, height);
+    glViewport(width/4, height/4 ,width/2, height/2);
 }
 
 void processInputs(GLFWwindow* window)
@@ -35,18 +76,9 @@ void processInputs(GLFWwindow* window)
 
 int main()
 {
-    glfwInit();
-    glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
-    glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3);
-    glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
+    Window* winObj = new Window();
+    GLFWwindow* window = winObj->GiveWindow();
 
-    GLFWwindow* window = glfwCreateWindow(800, 600, "Bruh", NULL, NULL);
-    if (window == NULL)
-    {
-        std::cerr<<"Couldnt create Window"<<std::endl;
-        glfwTerminate();
-        return -1;
-    }
     glfwMakeContextCurrent(window);
 
     if(!gladLoadGLLoader((GLADloadproc)glfwGetProcAddress))
@@ -55,86 +87,70 @@ int main()
         return -2;
     }
 
-    glViewport(0, 0,800, 600);
+    glViewport(WIDTH/4, HEIGHT/4 ,WIDTH/2, HEIGHT/2);
+    
      
     glfwSetFramebufferSizeCallback(window, framebuff_size_callback);
-    // int count = 0;
-    unsigned int VBO;
-    glGenBuffers(1, &VBO);
 
-
-    // unsigned int vertexShader;
-    // vertexShader = glCreateShader(GL_VERTEX_SHADER);
-    // glShaderSource(vertexShader, 1, &vertexShaderSource, NULL);
-    // glCompileShader(vertexShader);
-    // int success;
-    // char infoLog[512];
-    // glGetShaderiv(vertexShader, GL_COMPILE_STATUS, &success);
-    // if (!success)
-    // {
-    //     glGetShaderInfoLog(vertexShader, 512, NULL, infoLog);
-    //     std::cout << "ERROR::SHADER::VERTEX::COMPILATION_FAILED\n" << infoLog << std::endl;
-    // }
-    // unsigned int fragShader;
-    // fragShader = glCreateShader(GL_FRAGMENT_SHADER);
-    // glShaderSource(fragShader, 1, &fragmentShaderSource, NULL);
-    // glCompileShader(fragShader);
-    // glGetShaderiv(fragShader, GL_COMPILE_STATUS, &success);
-    // if (!success)
-    // {
-    //     glGetShaderInfoLog(fragShader, 512, NULL, infoLog);
-    //     std::cout << "ERROR::SHADER::FRAGMENT::COMPILATION_FAILED\n" << infoLog << std::endl;
-    // }
-    // unsigned int shaderPro;
-    // shaderPro = glCreateProgram();
-    // glAttachShader(shaderPro, vertexShader);
-    // glAttachShader(shaderPro, fragShader);
-
-
-    // glLinkProgram(shaderPro);
-
+    Shader *s1 = new Shader(vertexShaderSource, fragShaderSource);
+    unsigned int shaderPro1 = s1->MakeProgram();
+    delete s1;  
      
-    // glDeleteShader(vertexShader);
-    // glDeleteShader(fragShader);
-    Shader *s = new Shader();
-    unsigned int shaderPro = s->MakeProgram();
-    delete s;
+    Shader *s2 = new Shader(vertexShaderSource, fragShaderSource1);
+    unsigned int shaderPro2 = s2->MakeProgram();
 
-    unsigned int VAO;
-    glGenVertexArrays(1, &VAO);
-
-    glBindVertexArray(VAO);
-
-    glBindBuffer(GL_ARRAY_BUFFER, VBO);
-    glBufferData(GL_ARRAY_BUFFER, sizeof(vertices), vertices, GL_STATIC_DRAW);
-
-    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 3*sizeof(float), (void*)0);
-    glEnableVertexAttribArray(0);
-    glBindBuffer(GL_ARRAY_BUFFER, 0);
-    // glUseProgram(shaderPro);
+    GLuint VAO2;
+    glGenVertexArrays(1, &VAO2);
+    glBindVertexArray(VAO2);
+    Buffers b1(vertices1, 3, sizeof(float), 108, 0);
+    Buffers b2(vertices1, 3, sizeof(float), 108, 1);
     glBindVertexArray(0);
-
-    // glDrawArrays(GL_TRIANGLES, 0, 3);
-
-
-
-
+    // glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
+    glEnable(GL_DEPTH_TEST);
+    glDepthFunc(GL_LESS);
     while(!glfwWindowShouldClose(window))
     {
         processInputs(window);
-
+        static float count = -60;
+        static float count_d = -60;
         glClearColor(0.3f, 0.4f, 1.0f, 1.0f);
-        glClear(GL_COLOR_BUFFER_BIT);
+        glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+        
+        glUseProgram(shaderPro2);
 
-        glUseProgram(shaderPro);
-        glBindVertexArray(VAO);
-        glDrawArrays(GL_TRIANGLES, 0, 3);
+        glm::mat4 model = glm::mat4(1.0f);
+        glm::mat4 model_alt = glm::mat4(1.0f);
+        model = glm::rotate(model, glm::radians(count), glm::vec3(1.0f, 0.0f, 0.0f));
+        model_alt = glm::rotate(model_alt, glm::radians(count_d), glm::vec3(0.0f, 1.0f, 0.0f));
+        model = model * model_alt;
+        glm::mat4 view = glm::mat4(1.0f);
+        view = glm::translate(view, glm::vec3(0.0f, 0.0f, -3.0f));
+
+        glm::mat4 projection;
+        projection = glm::perspective(glm::radians(45.0f), 800.0f / 600.0f, 0.1f, 100.0f);
+
+        s2->ModUniform4fv(shaderPro2, "model", model);
+        s2->ModUniform4fv(shaderPro2, "view", view);
+        s2->ModUniform4fv(shaderPro2, "projection", projection);
+        s2->ModUniform1f(shaderPro2, "u_time", (float)glfwGetTime());
+        glBindVertexArray(VAO2);
+    
+        glDrawArrays(GL_TRIANGLES, 0, 66);
+
+        if (glfwGetKey(window, GLFW_KEY_W))
+            count += 0.9;
+        if (glfwGetKey(window, GLFW_KEY_S))
+            count -= 0.9;
+        if (glfwGetKey(window, GLFW_KEY_D))
+            count_d -= 0.9;
+        if (glfwGetKey(window, GLFW_KEY_A))
+            count_d += 0.9;
 
         glfwPollEvents();
         glfwSwapBuffers(window);
-        // count++;
-    }
 
+    }
+    delete s2;
     glfwTerminate();
     return 0;
 }

@@ -6,7 +6,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Sun May 22 13:39:43 2022
+# Make data base, printed on Sat May 28 08:59:27 2022
 
 # Variables
 
@@ -53,9 +53,9 @@ VSCODE_NLS_CONFIG = {"locale":"en-gb","availableLanguages":{},"_languagePackSupp
 # environment
 _ = /usr/bin/dbus-update-activation-environment
 # makefile (from 'Makefile', line 5)
-CFLAGS = -std=c++17 -O3 -g -Wall -Wextra -Wpedantic -Wstrict-aliasing -Wno-pointer-arith -Wno-newline-eof -Wno-unused-parameter -Wno-gnu-statement-expression -Wno-gnu-compound-literal-initializer -Wno-gnu-zero-variadic-macro-arguments -Iinclude
+CFLAGS = -std=c++17 -O3 -g -Wall -Wextra -Wpedantic -Wstrict-aliasing -Iinclude
 # environment
-JOURNAL_STREAM = 8:52729
+JOURNAL_STREAM = 8:51162
 # environment
 XDG_CONFIG_DIRS = /etc/xdg/xdg-ubuntu:/etc/xdg
 # makefile (from 'Makefile', line 1)
@@ -77,9 +77,9 @@ DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1000/bus
 # environment
 VSCODE_VERBOSE_LOGGING = true
 # environment
-MANAGERPID = 1688
+MANAGERPID = 1776
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-fd1ba220-1552-4b7c-8e8b-683afc1ef159.sock
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-889181da-d740-4bf0-a173-36c2c1dcfcd7.sock
 # environment
 VSCODE_CWD = /home/subhadeep19
 # default
@@ -89,7 +89,7 @@ PATH = /home/subhadeep19/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/us
 # environment
 GPG_AGENT_INFO = /run/user/1000/gnupg/S.gpg-agent:0:1
 # environment
-SESSION_MANAGER = local/HackTop:@/tmp/.ICE-unix/1863,unix/HackTop:/tmp/.ICE-unix/1863
+SESSION_MANAGER = local/HackTop:@/tmp/.ICE-unix/1993,unix/HackTop:/tmp/.ICE-unix/1993
 # environment
 XDG_RUNTIME_DIR = /run/user/1000
 # environment
@@ -99,7 +99,7 @@ VSCODE_LOG_STACK = false
 # environment
 ELECTRON_RUN_AS_NODE = 1
 # environment
-INVOCATION_ID = 8b7d5b800ebf41b48195055c0b51e355
+INVOCATION_ID = 970c875ba3994d468d24efa9d5f42063
 # makefile (from 'Makefile', line 12)
 LDFLAGS = -Llib/ -lglfw3 -lGL -lX11 -lXxf86vm -lXrandr -pthread -lXi -ldl
 # default
@@ -109,7 +109,7 @@ XDG_SESSION_DESKTOP = ubuntu
 # environment
 SSH_AUTH_SOCK = /run/user/1000/keyring/ssh
 # environment
-GIO_LAUNCHED_DESKTOP_FILE_PID = 2300
+GIO_LAUNCHED_DESKTOP_FILE_PID = 2486
 # automatic
 %F = $(notdir $%)
 # environment
@@ -121,7 +121,7 @@ PWD = /home/subhadeep19/bruh/emulator_prac
 # default
 .LOADED := 
 # environment
-SSH_AGENT_PID = 1825
+SSH_AGENT_PID = 1955
 # environment
 ORIGINAL_XDG_CURRENT_DESKTOP = ubuntu:GNOME
 # environment
@@ -223,9 +223,9 @@ GJS_DEBUG_OUTPUT = stderr
 # environment
 LANG = C
 # environment
-VSCODE_PID = 2300
+VSCODE_PID = 2486
 # variable set hash-table stats:
-# Load=107/1024=10%, Rehash=0, Collisions=14/145=10%
+# Load=107/1024=10%, Rehash=0, Collisions=14/141=10%
 
 # Pattern-specific Variable Values
 
@@ -233,28 +233,41 @@ VSCODE_PID = 2300
 
 # Directories
 
-# src/GUI (device 66306, inode 4734996): 2 files, no impossibilities.
+# include/imstb_rectpack.h (device 66306, inode 4729705): could not be opened.
+# src/GUI (device 66306, inode 4734996): 18 files, no impossibilities.
 # include/Window.h (device 66306, inode 4723187): could not be opened.
 # include/makeShaders.h (device 66306, inode 4723184): could not be opened.
-# src/Graphics (device 66306, inode 4735006): 7 files, no impossibilities.
-# include (device 66306, inode 4734987): 8 files, no impossibilities.
+# src/Graphics (device 66306, inode 4735006): 13 files, no impossibilities.
+# include (device 66306, inode 4734987): 21 files, no impossibilities.
 # src/Physics (device 66306, inode 4734985): 2 files, no impossibilities.
-# . (device 66306, inode 4734986): 11 files, no impossibilities.
+# . (device 66306, inode 4734986): 12 files, no impossibilities.
 # include/KHR (device 66306, inode 4735378): 3 files, no impossibilities.
-# src/glad.o (device 66306, inode 4722940): could not be opened.
+# src/glad.o (device 66306, inode 4718721): could not be opened.
 # include/Graphics.hpp (device 66306, inode 4722892): could not be opened.
+# include/imgui_internal.h (device 66306, inode 4729704): could not be opened.
+# include/imgui_impl_glfw.h (device 66306, inode 4729689): could not be opened.
 # src/glad.cpp (device 66306, inode 4722925): could not be opened.
+# include/imgui.h (device 66306, inode 4729699): could not be opened.
 # include/glad (device 66306, inode 4735377): 3 files, no impossibilities.
+# include/imconfig.h (device 66306, inode 4729701): could not be opened.
 # include/GLFW (device 66306, inode 4735373): 4 files, no impossibilities.
-# src/main.o (device 66306, inode 4718674): could not be opened.
+# include/MainGUI.h (device 66306, inode 4729720): could not be opened.
+# src/main.o (device 66306, inode 4718724): could not be opened.
+# include/glm (device 66306, inode 4735057): 31 files, no impossibilities.
 # src (device 66306, inode 4734999): 9 files, no impossibilities.
+# include/imgui_impl_opengl3.h (device 66306, inode 4729686): could not be opened.
+# include/imgui_impl_opengl3_loader.h (device 66306, inode 4729702): could not be opened.
+# include/Buffers.h (device 66306, inode 4719376): could not be opened.
+# include/imstb_textedit.h (device 66306, inode 4729706): could not be opened.
 # src/main.cpp (device 66306, inode 4718725): could not be opened.
+# include/Renderer.h (device 66306, inode 4729685): could not be opened.
+# include/imstb_truetype.h (device 66306, inode 4729707): could not be opened.
 
-# 49 files, no impossibilities in 16 directories.
+# 116 files, no impossibilities in 29 directories.
 
 # Implicit Rules
 
-%.o: %.cpp include/Graphics.hpp
+%.o: %.cpp include/Graphics.hpp include/glm/common.hpp include/glm/packing.hpp include/glm/matrix.hpp include/glm/mat4x4.hpp include/glm/mat4x2.hpp include/glm/glm.hpp include/glm/mat2x2.hpp include/glm/vec4.hpp include/glm/mat3x4.hpp include/glm/ext.hpp include/glm/mat2x3.hpp include/glm/vec2.hpp include/glm/fwd.hpp include/glm/vec3.hpp include/glm/mat3x2.hpp include/glm/geometric.hpp include/glm/exponential.hpp include/glm/trigonometric.hpp include/glm/integer.hpp include/glm/vector_relational.hpp include/glm/mat3x3.hpp include/glm/mat4x3.hpp include/glm/mat2x4.hpp
 #  recipe to execute (from 'Makefile', line 32):
 	$(CC) -o $@ -c $< $(CFLAGS)
 
@@ -263,7 +276,20 @@ VSCODE_PID = 2300
 # Files
 
 # Not a target:
+src/main.o:
+#  Implicit rule search has not been done.
+ 
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
 src/glad.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+src/GUI/imgui_widgets.o:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
@@ -278,14 +304,25 @@ all: dirs game
 # variable set hash-table stats:
 # Load=0/32=0%, Rehash=0, Collisions=0/4=0%
 
- 
+# Not a target:
+src/GUI/imgui_draw.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
 .PHONY: all clean
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
 
 # Not a target:
-src/main.o:
+src/GUI/imgui_tables.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+src/GUI/MainGUI.o:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
@@ -299,7 +336,7 @@ src/main.o:
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-05-21 10:40:52.045425563
+#  Last modified 2022-05-26 12:57:00.044364761
 #  File has been updated.
 #  Successfully updated.
 
@@ -331,7 +368,19 @@ dirs:
 	mkdir -p ./$(BIN)
 
 # Not a target:
+src/Graphics/Renderer.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
 src/Graphics/Window.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+src/GUI/imgui_demo.o:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
@@ -363,7 +412,13 @@ clean:
 #  recipe to execute (from 'Makefile', line 35):
 	rm -rf $(BIN) $(OBJ)
 
-game: src/Graphics/Graphics.o src/Graphics/makeShaders.o src/Graphics/Window.o src/glad.o src/main.o
+# Not a target:
+src/GUI/imgui_impl_opengl3.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+game: src/Graphics/Graphics.o src/Graphics/Renderer.o src/Graphics/makeShaders.o src/Graphics/Buffers.o src/Graphics/Window.o src/GUI/imgui_draw.o src/GUI/imgui_impl_opengl3.o src/GUI/imgui_widgets.o src/GUI/MainGUI.o src/GUI/imgui_tables.o src/GUI/imgui.o src/GUI/imgui_demo.o src/GUI/imgui_impl_glfw.o src/glad.o src/main.o
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
@@ -376,20 +431,38 @@ src/Graphics/makeShaders.o:
 #  Modification time never checked.
 #  File has not been updated.
 
+# Not a target:
+src/GUI/imgui_impl_glfw.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+src/GUI/imgui.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+src/Graphics/Buffers.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
 # files hash-table stats:
-# Load=14/1024=1%, Rehash=0, Collisions=0/39=0%
+# Load=24/1024=2%, Rehash=0, Collisions=2/59=3%
 # VPATH Search Paths
 
 # No 'vpath' search paths.
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 61 / storage = 617 B / avg = 10 B
-# current buf: size = 8162 B / used = 617 B / count = 61 / avg = 10 B
+# strcache buffers: 1 (0) / strings = 172 / storage = 2488 B / avg = 14 B
+# current buf: size = 8162 B / used = 2488 B / count = 172 / avg = 14 B
 
-# strcache performance: lookups = 99 / hit rate = 38%
+# strcache performance: lookups = 212 / hit rate = 18%
 # hash-table stats:
-# Load=61/8192=1%, Rehash=0, Collisions=9/99=9%
-# Finished Make data base on Sun May 22 13:39:43 2022
+# Load=172/8192=2%, Rehash=0, Collisions=15/212=7%
+# Finished Make data base on Sat May 28 08:59:27 2022
 
  
