@@ -1,9 +1,10 @@
 make --dry-run --always-make --keep-going --print-directory
 make: Entering directory '/home/subhadeep19/bruh/emulator_prac'
 mkdir -p ./bin
+ 
 g++ -o src/Graphics/Graphics.o -c src/Graphics/Graphics.cpp -std=c++17 -O3 -g -Wall -Wextra -Wpedantic -Wstrict-aliasing -Iinclude
 g++ -o src/Graphics/Renderer.o -c src/Graphics/Renderer.cpp -std=c++17 -O3 -g -Wall -Wextra -Wpedantic -Wstrict-aliasing -Iinclude
-g++ -o src/Graphics/makeShaders.o -c src/Graphics/makeShaders.cpp -std=c++17 -O3 -g -Wall -Wextra -Wpedantic -Wstrict-aliasing -Iinclude
+g++ -o src/Graphics/Shaders.o -c src/Graphics/Shaders.cpp -std=c++17 -O3 -g -Wall -Wextra -Wpedantic -Wstrict-aliasing -Iinclude
 g++ -o src/Graphics/Buffers.o -c src/Graphics/Buffers.cpp -std=c++17 -O3 -g -Wall -Wextra -Wpedantic -Wstrict-aliasing -Iinclude
 g++ -o src/Graphics/Window.o -c src/Graphics/Window.cpp -std=c++17 -O3 -g -Wall -Wextra -Wpedantic -Wstrict-aliasing -Iinclude
 g++ -o src/GUI/imgui_draw.o -c src/GUI/imgui_draw.cpp -std=c++17 -O3 -g -Wall -Wextra -Wpedantic -Wstrict-aliasing -Iinclude
@@ -14,8 +15,13 @@ g++ -o src/GUI/imgui_tables.o -c src/GUI/imgui_tables.cpp -std=c++17 -O3 -g -Wal
 g++ -o src/GUI/imgui.o -c src/GUI/imgui.cpp -std=c++17 -O3 -g -Wall -Wextra -Wpedantic -Wstrict-aliasing -Iinclude
 g++ -o src/GUI/imgui_demo.o -c src/GUI/imgui_demo.cpp -std=c++17 -O3 -g -Wall -Wextra -Wpedantic -Wstrict-aliasing -Iinclude
 g++ -o src/GUI/imgui_impl_glfw.o -c src/GUI/imgui_impl_glfw.cpp -std=c++17 -O3 -g -Wall -Wextra -Wpedantic -Wstrict-aliasing -Iinclude
+ 
+g++ -o src/Physics/Physics.o -c src/Physics/Physics.cpp -std=c++17 -O3 -g -Wall -Wextra -Wpedantic -Wstrict-aliasing -Iinclude
+g++ -o src/PerlinNoise.o -c src/PerlinNoise.cpp -std=c++17 -O3 -g -Wall -Wextra -Wpedantic -Wstrict-aliasing -Iinclude
 g++ -o src/glad.o -c src/glad.cpp -std=c++17 -O3 -g -Wall -Wextra -Wpedantic -Wstrict-aliasing -Iinclude
+ 
 g++ -o src/main.o -c src/main.cpp -std=c++17 -O3 -g -Wall -Wextra -Wpedantic -Wstrict-aliasing -Iinclude
-g++ -o bin/prog src/Graphics/Graphics.o src/Graphics/Renderer.o src/Graphics/makeShaders.o src/Graphics/Buffers.o src/Graphics/Window.o src/GUI/imgui_draw.o src/GUI/imgui_impl_opengl3.o src/GUI/imgui_widgets.o src/GUI/MainGUI.o src/GUI/imgui_tables.o src/GUI/imgui.o src/GUI/imgui_demo.o src/GUI/imgui_impl_glfw.o src/glad.o src/main.o -Llib/ -lglfw3 -lGL -lX11 -lXxf86vm -lXrandr -pthread -lXi -ldl
+g++ -o src/Object.o -c src/Object.cpp -std=c++17 -O3 -g -Wall -Wextra -Wpedantic -Wstrict-aliasing -Iinclude
+g++ -o bin/prog src/Graphics/Graphics.o src/Graphics/Renderer.o src/Graphics/Shaders.o src/Graphics/Buffers.o src/Graphics/Window.o src/GUI/imgui_draw.o src/GUI/imgui_impl_opengl3.o src/GUI/imgui_widgets.o src/GUI/MainGUI.o src/GUI/imgui_tables.o src/GUI/imgui.o src/GUI/imgui_demo.o src/GUI/imgui_impl_glfw.o src/Physics/Physics.o src/PerlinNoise.o src/glad.o src/main.o src/Object.o -Llib/ -lglfw3 -lGL -lX11 -lXxf86vm -lXrandr -pthread -lXi -ldl
 make: Leaving directory '/home/subhadeep19/bruh/emulator_prac'
  

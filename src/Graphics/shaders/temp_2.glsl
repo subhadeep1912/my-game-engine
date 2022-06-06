@@ -9,6 +9,6 @@ uniform vec4 ourColor; // we set this variable in the OpenGL code.
 
 void main()
 {
-    vec2 st = gl_FragCoord.xy/vec2(800, 600);
-    FragColor = vertCol;
+    // vec2 st = gl_FragCoord.xy/vec2(800, 600);
+    FragColor = ourColor;
 }  

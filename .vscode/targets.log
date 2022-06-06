@@ -6,7 +6,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Sat May 28 08:59:27 2022
+# Make data base, printed on Mon Jun  6 23:21:22 2022
 
 # Variables
 
@@ -55,7 +55,7 @@ _ = /usr/bin/dbus-update-activation-environment
 # makefile (from 'Makefile', line 5)
 CFLAGS = -std=c++17 -O3 -g -Wall -Wextra -Wpedantic -Wstrict-aliasing -Iinclude
 # environment
-JOURNAL_STREAM = 8:51162
+JOURNAL_STREAM = 8:56025
 # environment
 XDG_CONFIG_DIRS = /etc/xdg/xdg-ubuntu:/etc/xdg
 # makefile (from 'Makefile', line 1)
@@ -77,9 +77,9 @@ DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1000/bus
 # environment
 VSCODE_VERBOSE_LOGGING = true
 # environment
-MANAGERPID = 1776
+MANAGERPID = 2190
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-889181da-d740-4bf0-a173-36c2c1dcfcd7.sock
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-aa692c76-e945-47f2-9bc4-eebc7aad9263.sock
 # environment
 VSCODE_CWD = /home/subhadeep19
 # default
@@ -89,7 +89,7 @@ PATH = /home/subhadeep19/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/us
 # environment
 GPG_AGENT_INFO = /run/user/1000/gnupg/S.gpg-agent:0:1
 # environment
-SESSION_MANAGER = local/HackTop:@/tmp/.ICE-unix/1993,unix/HackTop:/tmp/.ICE-unix/1993
+SESSION_MANAGER = local/HackTop:@/tmp/.ICE-unix/2405,unix/HackTop:/tmp/.ICE-unix/2405
 # environment
 XDG_RUNTIME_DIR = /run/user/1000
 # environment
@@ -99,7 +99,7 @@ VSCODE_LOG_STACK = false
 # environment
 ELECTRON_RUN_AS_NODE = 1
 # environment
-INVOCATION_ID = 970c875ba3994d468d24efa9d5f42063
+INVOCATION_ID = fbc3920fd8164c729d985a36466c196e
 # makefile (from 'Makefile', line 12)
 LDFLAGS = -Llib/ -lglfw3 -lGL -lX11 -lXxf86vm -lXrandr -pthread -lXi -ldl
 # default
@@ -109,7 +109,7 @@ XDG_SESSION_DESKTOP = ubuntu
 # environment
 SSH_AUTH_SOCK = /run/user/1000/keyring/ssh
 # environment
-GIO_LAUNCHED_DESKTOP_FILE_PID = 2486
+GIO_LAUNCHED_DESKTOP_FILE_PID = 2738
 # automatic
 %F = $(notdir $%)
 # environment
@@ -121,7 +121,7 @@ PWD = /home/subhadeep19/bruh/emulator_prac
 # default
 .LOADED := 
 # environment
-SSH_AGENT_PID = 1955
+SSH_AGENT_PID = 2367
 # environment
 ORIGINAL_XDG_CURRENT_DESKTOP = ubuntu:GNOME
 # environment
@@ -223,7 +223,7 @@ GJS_DEBUG_OUTPUT = stderr
 # environment
 LANG = C
 # environment
-VSCODE_PID = 2486
+VSCODE_PID = 2738
 # variable set hash-table stats:
 # Load=107/1024=10%, Rehash=0, Collisions=14/141=10%
 
@@ -236,34 +236,42 @@ VSCODE_PID = 2486
 # include/imstb_rectpack.h (device 66306, inode 4729705): could not be opened.
 # src/GUI (device 66306, inode 4734996): 18 files, no impossibilities.
 # include/Window.h (device 66306, inode 4723187): could not be opened.
-# include/makeShaders.h (device 66306, inode 4723184): could not be opened.
-# src/Graphics (device 66306, inode 4735006): 13 files, no impossibilities.
-# include (device 66306, inode 4734987): 21 files, no impossibilities.
-# src/Physics (device 66306, inode 4734985): 2 files, no impossibilities.
+# src/Graphics (device 66306, inode 4735006): 14 files, no impossibilities.
+# include/Shaders.h (device 66306, inode 4723184): could not be opened.
+# include (device 66306, inode 4734987): 25 files, no impossibilities.
+# src/Physics (device 66306, inode 4734985): 4 files, no impossibilities.
 # . (device 66306, inode 4734986): 12 files, no impossibilities.
 # include/KHR (device 66306, inode 4735378): 3 files, no impossibilities.
-# src/glad.o (device 66306, inode 4718721): could not be opened.
+# src/glad.o (device 66306, inode 4729716): could not be opened.
+# src/PerlinNoise.o (device 66306, inode 4726599): could not be opened.
+# include/Camera.h (device 66306, inode 4719215): could not be opened.
 # include/Graphics.hpp (device 66306, inode 4722892): could not be opened.
 # include/imgui_internal.h (device 66306, inode 4729704): could not be opened.
 # include/imgui_impl_glfw.h (device 66306, inode 4729689): could not be opened.
 # src/glad.cpp (device 66306, inode 4722925): could not be opened.
+# src/PerlinNoise.cpp (device 66306, inode 4726597): could not be opened.
+# include/Physics.h (device 66306, inode 4729725): could not be opened.
 # include/imgui.h (device 66306, inode 4729699): could not be opened.
 # include/glad (device 66306, inode 4735377): 3 files, no impossibilities.
 # include/imconfig.h (device 66306, inode 4729701): could not be opened.
+# include/PerlinNoise.h (device 66306, inode 4726596): could not be opened.
 # include/GLFW (device 66306, inode 4735373): 4 files, no impossibilities.
+# src/Object.o (device 66306, inode 4719206): could not be opened.
 # include/MainGUI.h (device 66306, inode 4729720): could not be opened.
-# src/main.o (device 66306, inode 4718724): could not be opened.
+# src/main.o (device 66306, inode 4718721): could not be opened.
 # include/glm (device 66306, inode 4735057): 31 files, no impossibilities.
-# src (device 66306, inode 4734999): 9 files, no impossibilities.
+# src (device 66306, inode 4734999): 13 files, no impossibilities.
 # include/imgui_impl_opengl3.h (device 66306, inode 4729686): could not be opened.
 # include/imgui_impl_opengl3_loader.h (device 66306, inode 4729702): could not be opened.
 # include/Buffers.h (device 66306, inode 4719376): could not be opened.
 # include/imstb_textedit.h (device 66306, inode 4729706): could not be opened.
+# src/Object.cpp (device 66306, inode 4729723): could not be opened.
 # src/main.cpp (device 66306, inode 4718725): could not be opened.
 # include/Renderer.h (device 66306, inode 4729685): could not be opened.
 # include/imstb_truetype.h (device 66306, inode 4729707): could not be opened.
+# include/Object.h (device 66306, inode 4729724): could not be opened.
 
-# 116 files, no impossibilities in 29 directories.
+# 127 files, no impossibilities in 37 directories.
 
 # Implicit Rules
 
@@ -274,11 +282,11 @@ VSCODE_PID = 2486
 # 1 implicit rules, 0 (0.0%) terminal.
 
 # Files
+ 
 
 # Not a target:
 src/main.o:
 #  Implicit rule search has not been done.
- 
 #  Modification time never checked.
 #  File has not been updated.
 
@@ -336,9 +344,21 @@ src/GUI/MainGUI.o:
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-05-26 12:57:00.044364761
+#  Last modified 2022-06-02 13:27:36.719984666
 #  File has been updated.
 #  Successfully updated.
+
+# Not a target:
+src/PerlinNoise.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+src/Object.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
 
 dirs:
 #  Implicit rule search has not been done.
@@ -397,6 +417,12 @@ src/Graphics/Graphics.o:
 #  Modification time never checked.
 #  File has not been updated.
 
+# Not a target:
+src/Physics/Physics.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
 run: all
 #  Implicit rule search has not been done.
 #  Modification time never checked.
@@ -418,7 +444,7 @@ src/GUI/imgui_impl_opengl3.o:
 #  Modification time never checked.
 #  File has not been updated.
 
-game: src/Graphics/Graphics.o src/Graphics/Renderer.o src/Graphics/makeShaders.o src/Graphics/Buffers.o src/Graphics/Window.o src/GUI/imgui_draw.o src/GUI/imgui_impl_opengl3.o src/GUI/imgui_widgets.o src/GUI/MainGUI.o src/GUI/imgui_tables.o src/GUI/imgui.o src/GUI/imgui_demo.o src/GUI/imgui_impl_glfw.o src/glad.o src/main.o
+game: src/Graphics/Graphics.o src/Graphics/Renderer.o src/Graphics/Shaders.o src/Graphics/Buffers.o src/Graphics/Window.o src/GUI/imgui_draw.o src/GUI/imgui_impl_opengl3.o src/GUI/imgui_widgets.o src/GUI/MainGUI.o src/GUI/imgui_tables.o src/GUI/imgui.o src/GUI/imgui_demo.o src/GUI/imgui_impl_glfw.o src/Physics/Physics.o src/PerlinNoise.o src/glad.o src/main.o src/Object.o
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
@@ -426,7 +452,7 @@ game: src/Graphics/Graphics.o src/Graphics/Renderer.o src/Graphics/makeShaders.o
 	$(CC) -o $(BIN)/prog $^ $(LDFLAGS)
 
 # Not a target:
-src/Graphics/makeShaders.o:
+src/Graphics/Shaders.o:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
@@ -450,19 +476,19 @@ src/Graphics/Buffers.o:
 #  File has not been updated.
 
 # files hash-table stats:
-# Load=24/1024=2%, Rehash=0, Collisions=2/59=3%
+# Load=27/1024=3%, Rehash=0, Collisions=2/65=3%
 # VPATH Search Paths
 
 # No 'vpath' search paths.
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 172 / storage = 2488 B / avg = 14 B
-# current buf: size = 8162 B / used = 2488 B / count = 172 / avg = 14 B
+# strcache buffers: 1 (0) / strings = 192 / storage = 2758 B / avg = 14 B
+# current buf: size = 8162 B / used = 2758 B / count = 192 / avg = 14 B
 
-# strcache performance: lookups = 212 / hit rate = 18%
+# strcache performance: lookups = 234 / hit rate = 17%
 # hash-table stats:
-# Load=172/8192=2%, Rehash=0, Collisions=15/212=7%
-# Finished Make data base on Sat May 28 08:59:27 2022
+# Load=192/8192=2%, Rehash=0, Collisions=15/234=6%
+# Finished Make data base on Mon Jun  6 23:21:22 2022
 
  
